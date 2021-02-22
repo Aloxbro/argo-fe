@@ -16,7 +16,6 @@ const CrewForm = () => {
     const fetchData = useCallback(() => {
         axios.get(APIUrl.get)
             .then((response) => {
-                console.log('response', response);
                 setResData(response.data);
             })
             .catch((err) => {
@@ -48,9 +47,10 @@ const CrewForm = () => {
                 </Form.Label>
                 <Form.Control type='name' ref={nameRef} onChange={(e) => setCrewMember(e.target.value)} placeholder="Charalampos" />
                 {!loading &&
-                    <Button type='submit' className='btn btn-primary'> Envoyer</Button>
+                    <Button type='submit' className='btn btn-primary mt-4'> Envoyer</Button>
                 }
             </Form>
+            <hr className="custom-hr" />
             <CrewList crew={resData} />
         </div>
     );

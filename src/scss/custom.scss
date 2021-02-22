@@ -18,3 +18,19 @@
 .custom-margin{
     margin: 2em 0 4em 0;
 }
+
+.b-0{
+    bottom: 0;
+}
+
+.custom-hr{
+    border: none;
+    margin: 3rem 0;
+    height: 30px;
+  }
+  
+.hr:nth-child(1) {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/wave.svg);
+    height: 35px;
+}
+  

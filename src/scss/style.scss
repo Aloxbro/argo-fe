@@ -27,6 +27,10 @@ $GOLD: #f6c143;
   width: 100% !important;
 }
 
+.w-30p {
+  width: 30% !important;
+}
+
 @for $i from 1 through 1000 {
   .max-w-#{$i * 10}px {
     max-width: #{$i * 10}px !important;

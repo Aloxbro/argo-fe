@@ -42,7 +42,7 @@ const CrewForm = () => {
         <div className="m-auto mt-10px text-align">
             <h1 style={{ fontSize: '1.5em', margin: '0.5em 0.2wh' }}>Ajouter un(e) Argonaute</h1>
             <Form className="custom-margin text-align" onSubmit={handleSubmit}>
-                <Form.Label id="name">
+                <Form.Label id="name" className="mb-20px">
                     Nom de l'Argonaute :
                 </Form.Label>
                 <Form.Control type='name' ref={nameRef} onChange={(e) => setCrewMember(e.target.value)} placeholder="Charalampos" />

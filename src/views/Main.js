@@ -10,7 +10,7 @@ const Main = () => {
     return (
         <Container className="d-flex-column align-items-center justify-content-center" style={{ minHeight: "100vh" }}>
             <Header />
-            <div className="w-100 m-auto" style={{ maxWidth: '600px' }}>
+            <div className="w-100 m-auto" style={{ maxWidth: '600px', padding: '6vh 0' }}>
                 <CrewForm />
             </div>
             <Footer />
